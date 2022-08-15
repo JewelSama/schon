@@ -20,6 +20,47 @@ const orderSchema = mongoose.Schema({
         }
     ],
     shippingAddress: {
-        country: {}
+        address: {type: String, required: true},
+        postalCode: {type: String, required: true},
+        city: {type: String, required: true},
+        country: {type: String, required: true},
     },
+    paymentMethod: {
+        type: String,
+        required: true,
+    },
+    // paymentResult: {
+
+    // }
+    totalPrice: {
+        type: Number,
+        required: true,
+        default: 0.0,
+    },
+    isPaid: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+    paidAt: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+    isDelivered: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+    deliveredAt: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+}, {
+    timestamps: true,
 })
+
+const Order = mongoose.model('Order', orderSchema)
+
+module.exports = Order
