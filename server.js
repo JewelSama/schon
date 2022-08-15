@@ -6,12 +6,14 @@ const morgan = require('morgan')
 const productRouter = require('./routes/product.routes')
 const contactRouter = require('./routes/contact.routes')
 const cartRouter = require('./routes/cart.routes')
+const connectDB = require('./config/db')
 
 
 
 dotenv.config()
 
 const app = express()
+connectDB()
 
 if(process.env.NODE_EVN === 'development'){
     app.use(morgan('dev'))
