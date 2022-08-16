@@ -30,6 +30,36 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    new:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    percentOff:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    hotSale:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    featuredProducts:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    saleProducts:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    bestPrice:{
+        type: Boolean,
+        required: true,
+        default: false
+    },
     reviews: [reviewSchema],
     description: {
         type: String,
