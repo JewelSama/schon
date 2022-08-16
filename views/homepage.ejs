@@ -160,13 +160,18 @@
 										<!-- tabs slider start here -->
 										<div class="tabs-slider">
 											<!-- slide start here -->
+											<% latestProducts.forEach(product => { %>
+											
 											<div class="slide">
 												<!-- mt product1 center start here -->
 												<div class="mt-product1 mt-paddingbottom20">
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/bombi1.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="<%= product.image %> " alt="image description"></a>
+																<span class="caption">
+																	<span class="new">NEW</span>
+																</span>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -192,7 +197,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
+																<a href="product-detail.html"><img src="<%= product.image %>" alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -216,243 +221,9 @@
 													</div>
 												</div><!-- mt product1 center end here -->
 											</div>
+										<% }); %> 
 											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																</span>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Upholstered chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="mt-stars">
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star-o"></i></li>
-																</ul>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Trestle-based chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>198,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Wood Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>198,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																	<span class="new">NEW</span>
-																</span>
-																<ul class="mt-stars">
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star-o"></i></li>
-																</ul>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																</span>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Upholstered chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
+										
 											<!-- slide end here -->
 										</div>
 										<!-- tabs slider end here -->
@@ -461,15 +232,17 @@
 										<!-- tabs slider start here -->
 										<div class="tabs-slider">
 											<!-- slide start here -->
+											<% bestSellerProducts.forEach(product => { %>
+												
 											<div class="slide">
 												<!-- mt product1 center start here -->
 												<div class="mt-product1 mt-paddingbottom20">
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
+																<a href="product-detail.html"><img src="<%= product.image %> " alt="image description"></a>
 																<span class="caption">
-																	<span class="new">NEW</span>
+																	<span class="off">15% Off</span>
 																</span>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
@@ -495,7 +268,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
+																<a href="product-detail.html"><img src="<%= product.image %>" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -517,243 +290,8 @@
 												</div>
 												<!-- mt product1 center end here -->
 											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																</span>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Upholstered chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Wood Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>198,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="mt-stars">
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star-o"></i></li>
-																</ul>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Trestle-based chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>198,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																	<span class="new">NEW</span>
-																</span>
-																<ul class="mt-stars">
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star"></i></li>
-																	<li><i class="fa fa-star-o"></i></li>
-																</ul>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-											</div>
-											<!-- slide end here -->
-											<!-- slide start here -->
-											<div class="slide">
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<span class="caption">
-																	<span class="off">15% Off</span>
-																</span>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Upholstered chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div>
-												<!-- mt product1 center end here -->
-												<!-- mt product1 center start here -->
-												<div class="mt-product1 mt-paddingbottom20">
-													<div class="box">
-														<div class="b1">
-															<div class="b2">
-																<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-																<ul class="links">
-																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-																	<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="txt">
-														<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-														<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-													</div>
-												</div><!-- mt product1 center end here -->
-											</div>
+
+											<%}); %>
 											<!-- slide end here -->
 										</div>
 										<!-- tabs slider end here -->
@@ -776,13 +314,15 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="bestseller-slider">
+									<% bestSellerProducts.forEach(product => { %>
+
 									<div class="slide">
 										<!-- mt product1 center start here -->
 										<div class="mt-product1 large">
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/bombi1.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="<%= product.image %>"  alt="image description"></a>
 														<span class="caption">
 															<span class="best-price">Best Price</span>
 														</span>
@@ -800,117 +340,8 @@
 											</div>
 										</div><!-- mt product1 center end here -->
 									</div>
-									<div class="slide">
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 large">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="images/couch.jpg" alt="image description"></a>
-														<ul class="links add">
-															<li><a href="#"><i class="icon-handbag"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Marvelous Modern 3 Seater</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>599,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-									</div>
-									<div class="slide">
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 large">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/275x285" alt="image description"></a>
-														<ul class="links add">
-															<li><a href="#"><i class="icon-handbag"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Puff  Armchair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-									</div>
-									<div class="slide">
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 large">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/275x285" alt="image description"></a>
-														<span class="caption">
-															<span class="best-price">Best Price</span>
-														</span>
-														<ul class="links add">
-															<li><a href="#"><i class="icon-handbag"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-									</div>
-									<div class="slide">
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 large">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/275x285" alt="image description"></a>
-														<ul class="links add">
-															<li><a href="#"><i class="icon-handbag"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Marvelous Modern 3 Seater</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>599,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-									</div>
-									<div class="slide">
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 large">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/275x285" alt="image description"></a>
-														<span class="caption">
-															<span class="off">15% Off</span>
-														</span>
-														<ul class="links add">
-															<li><a href="#"><i class="icon-handbag"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Puff  Armchair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-									</div>
+									<% }) %> 
+									
 								</div>
 							</div>
 						</div>

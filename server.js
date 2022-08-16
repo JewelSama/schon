@@ -42,7 +42,10 @@ app.get('/', async(req, res) => {
     const latestProducts = await Product.find().sort({
         createdAt: 'desc'
     })
-    res.render('homepage', {products:products, latestProducts: latestProducts})
+    const bestSellerProducts = await Product.find().sort({
+        createdAt: 'asc'
+    })
+    res.render('homepage', {products:products, latestProducts: latestProducts, bestSellerProducts:bestSellerProducts})
 })
 
 const PORT = process.env.PORT || 5000
