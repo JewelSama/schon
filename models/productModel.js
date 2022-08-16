@@ -74,7 +74,12 @@ const productSchema = mongoose.Schema({
         required: true,
         default: 0
     },
-    price: {
+    oldPrice: {
+        type: Number,
+        required: true,
+        default: 0
+    },
+    newPrice: {
         type: Number,
         required: true,
         default: 0
