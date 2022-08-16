@@ -18,7 +18,7 @@
 										<div class="txt">
 											<p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
 										</div>
-										<a href="product-detail.html" class="shop">shop now</a>
+										<a href="#" class="shop">shop now</a>
 									</div>
 								</div>
 							</div>
@@ -38,7 +38,7 @@
 										<div class="txt">
 											<p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
 										</div>
-										<a href="product-detail.html" class="shop">shop now</a>
+										<a href="#" class="shop">shop now</a>
 									</div>
 								</div>
 							</div>
@@ -58,7 +58,7 @@
 										<div class="txt">
 											<p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
 										</div>
-										<a href="product-detail.html" class="shop">shop now</a>
+										<a href="#" class="shop">shop now</a>
 									</div>
 								</div>
 							</div>
@@ -99,7 +99,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="/products/:id"><img src="<%= product.image %>" alt="image description"></a>
+																<a href="/products/<%= product._id %> "><img src="<%= product.image %>" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																	<span class="new">NEW</span>
@@ -119,7 +119,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="/"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦ <span><%= product.newPrice%></span></span>
 													</div>
 												</div><!-- mt product1 center end here -->
@@ -128,7 +128,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="<%= product.image %>" alt="image description"></a>
+																<a href="/products/<%= product._id %>"><img src="<%= product.image %>" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -144,7 +144,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="product-detail.html"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦ <span><%= product.newPrice %></span></span>
 													</div>
 												</div>
@@ -168,7 +168,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="<%= product.image %> " alt="image description"></a>
+																<a href="/products/<%= product._id %>"><img src="<%= product.image %> " alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -187,7 +187,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="product-detail.html"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦ <span> <%= product.newPrice %></span></span>
 													</div>
 												</div>
@@ -197,7 +197,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="<%= product.image %>" alt="image description"></a>
+																<a href="/products/<%= product._id %>"><img src="<%= product.image %>" alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -216,7 +216,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="product-detail.html"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦<span> <%= product.newPrice%></span></span>
 													</div>
 												</div><!-- mt product1 center end here -->
@@ -240,7 +240,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="<%= product.image %> " alt="image description"></a>
+																<a href="/products/<%= product._id %>"><img src="<%= product.image %> " alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -259,7 +259,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="product-detail.html"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦<span> <%= product.newPrice%></span></span>
 													</div>
 												</div><!-- mt product1 center end here -->
@@ -268,7 +268,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="<%= product.image %>" alt="image description"></a>
+																<a href="/products/<%= product._id %>"><img src="<%= product.image %>" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -284,7 +284,7 @@
 														</div>
 													</div>
 													<div class="txt">
-														<strong class="title"><a href="product-detail.html"><%= product.name  %></a></strong>
+														<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %></a></strong>
 														<span class="price">₦<span> <%= product.newPrice  %></span></span>
 													</div>
 												</div>
@@ -322,7 +322,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="<%= product.image %>"  alt="image description"></a>
+														<a href="/products/<%= product._id %>"><img src="<%= product.image %>"  alt="image description"></a>
 														<span class="caption">
 															<span class="best-price">Best Price</span>
 														</span>
@@ -335,7 +335,7 @@
 												</div>
 											</div>
 											<div class="txt">
-												<strong class="title"><a href="product-detail.html"><%= product.name  %> </a></strong>
+												<strong class="title"><a href="/products/<%= product._id %>"><%= product.name  %> </a></strong>
 												<span class="price"><span> ₦ <%= product.newPrice%></span></span>
 											</div>
 										</div><!-- mt product1 center end here -->
@@ -358,11 +358,11 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="<%= product.image %>"></a>
+										<a href="/products/<%= product._id %>"><img alt="image description" src="<%= product.image %>"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
-											<strong><a href="product-detail.html"><%= product.name %></a></strong>
+											<strong><a href="/products/<%= product._id %>"><%= product.name %></a></strong>
 											<ul class="mt-stars">
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
@@ -387,11 +387,11 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="<%= product.image %> "></a>
+										<a href="/products/<%= product._id %>"><img alt="image description" src="<%= product.image %> "></a>
 									</div>
 									<div class="text">
 										<div class="frame">
-											<strong><a href="product-detail.html"><%= product.name %></a></strong>
+											<strong><a href="/products/<%= product._id %>"><%= product.name %></a></strong>
 										</div>
 										<del class="off">₦ <%= product.oldPrice %></del>
 										<span class="price">₦ <%= product.newPrice %></span>
@@ -412,11 +412,11 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="<%= product.image %> "></a>
+										<a href="/products/<%= product._id %>"><img alt="image description" src="<%= product.image %> "></a>
 									</div>
 									<div class="text">
 										<div class="frame">
-											<strong><a href="product-detail.html"><%= product.name %></a></strong>
+											<strong><a href="/products/<%= product._id %>"><%= product.name %></a></strong>
 										</div>
 										<del class="off">₦ <%= product.oldPrice %></del>
 										<span class="price">₦ <%= product.newPrice%></span>
@@ -435,11 +435,11 @@
 									<%}); %> 
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="Coming Soon" src=""></a>
+										<a href="#"><img alt="Coming Soon" src=""></a>
 									</div>
 									<div class="text">
 										<div class="frame">
-											<strong><a href="product-detail.html">Egon Wooden Chair</a></strong>
+											<strong><a href="#>">Egon Wooden Chair</a></strong>
 											<ul class="mt-stars">
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>

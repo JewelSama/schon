@@ -5,7 +5,7 @@
 			<!-- mt main start here -->
 			<main id="mt-main">
 				<!-- Mt Contact Banner of the Page -->
-				<section class="mt-contact-banner style4 wow fadeInUp" data-wow-delay="0.4s" style="background-image: url(http://placehold.it/1920x205);">
+				<section class="mt-contact-banner style4 wow fadeInUp" data-wow-delay="0.4s" style="background-image: url('images/pendant2.jpg');">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 text-center">
@@ -151,14 +151,17 @@
 							<!-- shop-widget of the Page start here -->
 							<section class="shop-widget">
 								<h2>HOT SALE</h2>
+								<% products.forEach(product => { %>
+									<% if (product.hotSale === true) { %>
+										
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img src="http://placehold.it/80x80" alt="image description"></a>
+										<a href="product-detail.html"><img src="<%= product.image %> " alt="image description"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
-											<strong><a href="product-detail.html">Egon Wooden Chair</a></strong>
+											<strong><a href="product-detail.html"><%= product.name %></a></strong>
 											<ul class="mt-stars">
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
@@ -166,55 +169,15 @@
 												<li><i class="fa fa-star-o"></i></li>
 											</ul>
 										</div>
-										<del class="off">₦75,00</del>
-										<span class="price">₦55,00</span>
+										<del class="off">₦ <%= product.oldPrice %></del>
+										<span class="price">₦ <%= product.newPrice %></span>
 									</div>
 								</div><!-- mt product4 end here -->
-								<!-- mt product4 start here -->
-								<div class="mt-product4 mt-paddingbottom20">
-									<div class="img">
-										<a href="product-detail.html"><img src="http://placehold.it/80x80" alt="image description"></a>
-									</div>
-									<div class="text">
-										<div class="frame">
-											<strong><a href="product-detail.html">Oyo Cantilever Chair</a></strong>
-										</div>
-										<del class="off">₦75,00</del>
-										<span class="price">₦55,00</span>
-									</div>
-								</div><!-- mt product4 end here -->
-								<!-- mt product4 start here -->
-								<div class="mt-product4 mt-paddingbottom20">
-									<div class="img">
-										<a href="product-detail.html"><img src="http://placehold.it/80x80" alt="image description"></a>
-									</div>
-									<div class="text">
-										<div class="frame">
-											<strong><a href="product-detail.html">Kurve Chair</a></strong>
-											<ul class="mt-stars">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star-o"></i></li>
-											</ul>
-										</div>
-										<del class="off">₦75,00</del>
-										<span class="price">₦55,00</span>
-									</div>
-								</div><!-- mt product4 end here -->
-								<!-- mt product4 start here -->
-								<div class="mt-product4 mt-paddingbottom20">
-									<div class="img">
-										<a href="product-detail.html"><img src="http://placehold.it/80x80" alt="image description"></a>
-									</div>
-									<div class="text">
-										<div class="frame">
-											<strong><a href="product-detail.html">Marvelous Wooden Chair</a></strong>
-										</div>
-										<del class="off">₦75,00</del>
-										<span class="price">₦55,00</span>
-									</div>
-								</div><!-- mt product4 end here -->
+
+								<%} %>
+							<% }) %> 
+								
+
 							</section><!-- shop-widget of the Page end here -->
 						</aside><!-- sidebar of the Page end here -->
 						<div class="col-xs-12 col-sm-8 col-md-9 wow fadeInRight" data-wow-delay="0.4s">
@@ -249,16 +212,19 @@
 							<!-- product post start here -->
 							<div class="product-post">
 								<!-- img holder start here -->
+								<% products.forEach(product => { %>
+									
+								 
 								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
+									<img src="<%= product.image %> " alt="image description">
 								</div><!-- img holder end here -->
 								<!-- txt holder start here -->
 								<div class="txt-holder">
 									<!-- align left start here -->
 									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Marvelous Modern 3 Seater</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  399,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
+										<strong class="title"><a href="product-detail.html"><%= product.name %></a></strong>
+										<span class="price">₦ <%= product.newPrice %> </span>
+										<p><%= product.description %></p>
 									</div><!-- align left end here -->
 									<!-- align right start here -->
 									<div class="align-right">
@@ -276,162 +242,9 @@
 										</ul>
 									</div><!-- align right end here -->
 								</div><!-- txt holder end here -->
+							<%}); %>
 							</div><!-- product post end here -->
-							<!-- product post start here -->
-							<div class="product-post">
-								<!-- img holder start here -->
-								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
-								</div><!-- img holder end here -->
-								<!-- txt holder start here -->
-								<div class="txt-holder">
-									<!-- align left start here -->
-									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Marvelous Modern 3 Seater</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  399,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-									</div><!-- align left end here -->
-									<!-- align right start here -->
-									<div class="align-right">
-										<ul class="list-unstyled rating-list">
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li><a href="#"><i class="fa fa-star-o"></i></a></li>
-											<li>Reviews (12)</li>
-										</ul>
-										<a href="#" class="btn-cart">ADD TO CART</a>
-										<ul class="list-unstyled nav">
-											<li><a href="#"><i class="fa fa-heart"></i> ADD TO WISHLIST</a></li>
-											<li><a href="#"><i class="fa fa-exchange"></i> COMPARE</a></li>
-										</ul>
-									</div><!-- align right end here -->
-								</div><!-- txt holder end here -->
-							</div><!-- product post end here -->
-							<!-- product post start here -->
-							<div class="product-post">
-								<!-- img holder start here -->
-								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
-								</div><!-- img holder end here -->
-								<!-- txt holder start here -->
-								<div class="txt-holder">
-									<!-- align left start here -->
-									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Chair with armrests</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  200,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-									</div><!-- align left end here -->
-									<!-- align right start here -->
-									<div class="align-right">
-										<ul class="list-unstyled rating-list">
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li><a href="#"><i class="fa fa-star-o"></i></a></li>
-											<li>Reviews (12)</li>
-										</ul>
-										<a href="#" class="btn-cart">ADD TO CART</a>
-										<ul class="list-unstyled nav">
-											<li><a href="#"><i class="fa fa-heart"></i> ADD TO WISHLIST</a></li>
-											<li><a href="#"><i class="fa fa-exchange"></i> COMPARE</a></li>
-										</ul>
-									</div><!-- align right end here -->
-								</div><!-- txt holder end here -->
-							</div><!-- product post end here -->
-							<!-- product post start here -->
-							<div class="product-post">
-								<!-- img holder start here -->
-								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
-								</div><!-- img holder end here -->
-								<!-- txt holder start here -->
-								<div class="txt-holder">
-									<!-- align left start here -->
-									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Pouf Chair</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  247,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-									</div><!-- align left end here -->
-									<!-- align right start here -->
-									<div class="align-right">
-										<ul class="list-unstyled rating-list">
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li><a href="#"><i class="fa fa-star-o"></i></a></li>
-											<li>Reviews (12)</li>
-										</ul>
-										<a href="#" class="btn-cart">ADD TO CART</a>
-										<ul class="list-unstyled nav">
-											<li><a href="#"><i class="fa fa-heart"></i> ADD TO WISHLIST</a></li>
-											<li><a href="#"><i class="fa fa-exchange"></i> COMPARE</a></li>
-										</ul>
-									</div><!-- align right end here -->
-								</div><!-- txt holder end here -->
-							</div><!-- product post end here -->
-							<!-- product post start here -->
-							<div class="product-post">
-								<!-- img holder start here -->
-								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
-								</div><!-- img holder end here -->
-								<!-- txt holder start here -->
-								<div class="txt-holder">
-									<!-- align left start here -->
-									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Jalis Counter Stool</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  369,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-									</div><!-- align left end here -->
-									<!-- align right start here -->
-									<div class="align-right">
-										<ul class="list-unstyled rating-list">
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li><a href="#"><i class="fa fa-star-o"></i></a></li>
-											<li>Reviews (12)</li>
-										</ul>
-										<a href="#" class="btn-cart">ADD TO CART</a>
-										<ul class="list-unstyled nav">
-											<li><a href="#"><i class="fa fa-heart"></i> ADD TO WISHLIST</a></li>
-											<li><a href="#"><i class="fa fa-exchange"></i> COMPARE</a></li>
-										</ul>
-									</div><!-- align right end here -->
-								</div><!-- txt holder end here -->
-							</div><!-- product post end here -->
-							<!-- product post start here -->
-							<div class="product-post">
-								<!-- img holder start here -->
-								<div class="img-holder">
-									<img src="http://placehold.it/225x275" alt="image description">
-								</div><!-- img holder end here -->
-								<!-- txt holder start here -->
-								<div class="txt-holder">
-									<!-- align left start here -->
-									<div class="align-left">
-										<strong class="title"><a href="product-detail.html">Yard SeChair</a></strong>
-										<span class="price"><i class="fa fa-eur"></i>  139,00</span>
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-									</div><!-- align left end here -->
-									<!-- align right start here -->
-									<div class="align-right">
-										<ul class="list-unstyled rating-list">
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li class="active"><a href="#"><i class="fa fa-star"></i></a></li>
-											<li><a href="#"><i class="fa fa-star-o"></i></a></li>
-											<li>Reviews (12)</li>
-										</ul>
-										<a href="#" class="btn-cart">ADD TO CART</a>
-										<ul class="list-unstyled nav">
-											<li><a href="#"><i class="fa fa-heart"></i> ADD TO WISHLIST</a></li>
-											<li><a href="#"><i class="fa fa-exchange"></i> COMPARE</a></li>
-										</ul>
-									</div><!-- align right end here -->
-								</div><!-- txt holder end here -->
-							</div><!-- product post end here -->
+
 							<!-- mt pagination start here -->
 							<nav class="mt-pagination">
 								<ul class="list-inline">

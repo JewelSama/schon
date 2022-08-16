@@ -16,29 +16,25 @@
 									</ul>
 									<!-- Comment List of the Page end -->
 									<!-- Product Slider of the Page -->
-									<div class="product-slider">
-										<div class="slide">
-											<img src="http://placehold.it/610x490" alt="image descrption">
-										</div>
-										<div class="slide">
-											<img src="http://placehold.it/610x490" alt="image descrption">
-										</div>
-										<div class="slide">
-											<img src="http://placehold.it/610x490" alt="image descrption">
-										</div>
-										<div class="slide">
-											<img src="http://placehold.it/610x490" alt="image descrption">
-										</div>
+									<div class="mt-4">
+
 									</div>
 									<!-- Product Slider of the Page end -->
 									<!-- Pagg Slider of the Page -->
-									<ul class="list-unstyled slick-slider pagg-slider">
-										<li><div class="img"><img src="http://placehold.it/105x105" alt="image description"></div></li>
-										<li><div class="img"><img src="http://placehold.it/105x105" alt="image description"></div></li>
-										<li><div class="img"><img src="http://placehold.it/105x105" alt="image description"></div></li>
-										<li><div class="img"><img src="http://placehold.it/105x105" alt="image description"></div></li>
-										<li><div class="img"><img src="http://placehold.it/105x105" alt="image description"></div></li>
+									<ul class="list-unstyled slick-slider pagg-slider" style="margin-top: 40px;">
+										<li><div class="img"><img src="<%= product.image %>" alt="image description"></div></li>
+										<li><div class="img"><img src="<%= product.image %>" alt="image description"></div></li>
+										<li><div class="img"><img src="<%= product.image %>" alt="image description"></div></li>
+										<li><div class="img"><img src="<%= product.image %>" alt="image description"></div></li>
+										<li><div class="img"><img src="<%= product.image %>" alt="image description"></div></li>
 									</ul>
+									<div class="product-slider">
+										
+										<div class="slide">
+											<img src="<%= product.image %> " style="margin-top: 40px;" alt="image descrption">
+										</div>
+										
+									</div>
 									<!-- Pagg Slider of the Page end -->
 								</div>
 								<!-- Slider of the Page end -->
@@ -78,8 +74,8 @@
 										</fieldset>
 									</form>
 									<div class="txt-wrap">
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.</p>
-										<p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair.</p>
+										<p><%= product.description %></p>
+										<p><%= product.description %></p>
 									</div>
 									<!-- Product Form of the Page end -->
 									<ul class="list-unstyled list">
@@ -104,12 +100,12 @@
 								</ul>
 								<div class="tab-content">
 									<div id="tab1">
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair. </p>
-										<p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. <br>Solid oak construction.<br> Back in plywood (2  faces oak veneer) or upholstered in fabric, leather or eco-leather.<br> Seat upholstered in fabric, leather or eco-leather. <br> H 830 x L 585 x P 540 mm.</p>
+										<p><%= product.description %></p> 
+										<p><%= product.description %></p> 
 									</div>
 									<div id="tab2">
-										<p>Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair. </p>
-										<p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. <br>Solid oak construction.<br> Back in plywood (2  faces oak veneer) or upholstered in fabric, leather or eco-leather.<br> Seat upholstered in fabric, leather or eco-leather. <br> H 830 x L 585 x P 540 mm.</p>
+										<p><%= product.description %></p> 
+										<p><%= product.description %></p> 
 									</div>
 									<div id="tab3">
 										<div class="product-comment">
@@ -182,11 +178,12 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<!-- mt product1 center start here -->
+										<% relProducts.forEach(product => { %>
 										<div class="mt-product1 mt-paddingbottom20">
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
+														<a href="/products/<%= product._id %>"><img src="<%= product.image %> " alt="image description"></a>
 														<span class="caption">
 															<span class="new">NEW</span>
 														</span>
@@ -205,96 +202,12 @@
 												</div>
 											</div>
 											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Puff Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>287,00</span></span>
+												<strong class="title"><a href="/products/<%= product._id %>"><%= product.name %></a></strong>
+												<span class="price"><i class="fa fa-eur"></i> <span><%= product.newPrice%></span></span>
 											</div>
 										</div><!-- mt product1 center end here -->
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 mt-paddingbottom20">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-														<ul class="links">
-															<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>399,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 mt-paddingbottom20">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-														<ul class="links">
-															<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Wood Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>198,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 mt-paddingbottom20">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-														<span class="caption">
-															<span class="off">15% Off</span>
-															<span class="new">NEW</span>
-														</span>
-														<ul class="mt-stars">
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star"></i></li>
-															<li><i class="fa fa-star-o"></i></li>
-														</ul>
-														<ul class="links">
-															<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
-										<!-- mt product1 center start here -->
-										<div class="mt-product1 mt-paddingbottom20">
-											<div class="box">
-												<div class="b1">
-													<div class="b2">
-														<a href="product-detail.html"><img src="http://placehold.it/215x215" alt="image description"></a>
-														<ul class="links">
-															<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
-															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
-															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="txt">
-												<strong class="title"><a href="product-detail.html">Bombi Chair</a></strong>
-												<span class="price"><i class="fa fa-eur"></i> <span>200,00</span></span>
-											</div>
-										</div><!-- mt product1 center end here -->
+									<%}); %> 
+										
 									</div>
 								</div>
 							</div>

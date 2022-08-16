@@ -6,8 +6,14 @@ const getAllProducts = async(req, res) => {
     res.render('productList', {products:products})
 }
 
-const getProduct = (req, res) => {
-    res.render('productDetail')
+const getProduct = async(req, res) => {
+    let relatedProduct = await Product.find()
+    const relProducts = relatedProduct.slice(0, 5) 
+
+    const product = await Product.findById(req.params.id)
+
+
+    res.render('productDetail', {product:product, relProducts:relProducts})
 }
 
 module.exports = {getAllProducts, getProduct}
