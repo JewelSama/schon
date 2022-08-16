@@ -6,6 +6,7 @@ const morgan = require('morgan')
 const productRouter = require('./routes/product.routes')
 const contactRouter = require('./routes/contact.routes')
 const cartRouter = require('./routes/cart.routes')
+const Product = require('./models/productModel')
 const connectDB = require('./config/db')
 
 
@@ -36,8 +37,12 @@ app.use('/cart', cartRouter)
 app.get('/wishlist', (req, res) => {
     res.render('wishlist')
 })
-app.get('/', (req, res) => {
-    res.render('homepage')
+app.get('/', async(req, res) => {
+    const products = await Product.find()
+    const latestProducts = await Product.find().sort({
+        createdAt: 'desc'
+    })
+    res.render('homepage', {products:products, latestProducts: latestProducts})
 })
 
 const PORT = process.env.PORT || 5000
