@@ -69,7 +69,7 @@
 												<input type="number" id="qty" placeholder="1">
 											</div>
 											<div class="row-val">
-												<button type="submit">ADD TO CART</button>
+												<button type="button" class="add-to-cart" data-id="<%= product._id %>">ADD TO CART</button>
 											</div>
 										</fieldset>
 									</form>
@@ -194,7 +194,7 @@
 															<li><i class="fa fa-star-o"></i></li>
 														</ul>
 														<ul class="links">
-															<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
+															<li><a href="#" class="add-to-cart" data-id="<%= product._id %>"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
 															<li><a href="#"><i class="icomoon icon-exchange"></i></a></li>
 														</ul>
